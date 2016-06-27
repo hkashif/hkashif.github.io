@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Hany Kashif</title>
+		<description>Research Software Engineer</description>
+		<link>http://hkashif.github.io/jekyll-clean-dark</link>
+		<atom:link href="http://hkashif.github.io/jekyll-clean-dark/feed.xml" rel="self" type="application/rss+xml" />
+		
+			<item>
+				<title>Share buttons</title>
+				<description>&lt;h1 id=&quot;share-buttons&quot;&gt;Share buttons&lt;/h1&gt;
+
+&lt;p&gt;This theme comes with built-in share buttons. You can see them in the bottom f this post.&lt;br /&gt;
+To turn them on in the header of your post add:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yml&quot; data-lang=&quot;yml&quot;&gt;&lt;span class=&quot;s&quot;&gt;share&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;true&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;If you want to disable some of them - go to &lt;strong&gt;_config.yml&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yml&quot; data-lang=&quot;yml&quot;&gt;&lt;span class=&quot;s&quot;&gt;share&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;s&quot;&gt;facebook&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;true&lt;/span&gt;
+  &lt;span class=&quot;s&quot;&gt;twitter&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;true&lt;/span&gt;
+  &lt;span class=&quot;s&quot;&gt;gplus&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;true&lt;/span&gt;
+  &lt;span class=&quot;s&quot;&gt;linkedin&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;true&lt;/span&gt;
+  &lt;span class=&quot;s&quot;&gt;pinterest&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;true&lt;/span&gt;
+  &lt;span class=&quot;s&quot;&gt;email&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;true&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h1 id=&quot;add-new-buttons&quot;&gt;Add new buttons&lt;/h1&gt;
+
+&lt;p&gt;To add new buttons:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;add icon name in &lt;strong&gt;_config.yml&lt;/strong&gt;;&lt;/li&gt;
+  &lt;li&gt;add section in &lt;strong&gt;_includes/share.html&lt;/strong&gt;;&lt;/li&gt;
+  &lt;li&gt;add styles in &lt;strong&gt;css/theme.css&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+				<pubDate>Sun, 15 May 2016 12:25:06 -0400</pubDate>
+				<link>http://hkashif.github.io/jekyll-clean-dark/2016/05/test</link>
+				<guid isPermaLink="true">http://hkashif.github.io/jekyll-clean-dark/2016/05/test</guid>
+			</item>
+		
+	</channel>
+</rss>
