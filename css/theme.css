@@ -254,20 +254,54 @@ div.post-meta {
 .note {
   position: relative;
   border: 0;
-  padding-left: 30px; }
+  padding-left: 30px;
+  color: #ddd;
+  margin-bottom: 5px; }
 
 .note:before {
-  content: "\f06a";
+  content: "\f05a";
   font-size: 2em;
   font-family: FontAwesome;
   left: 0px;
   position: absolute;
   top: 0;
-  color: #87CEFA; }
+  color: lightblue; }
 
 .warning:before {
-  content: "\f071";
-  color: yellow; }
+  content: "\f06a";
+  color: gold; }
+
+.question:before {
+  content: "\f059";
+  color: white; }
+
+.info:before {
+  content: "\f05a";
+  color: lightblue; }
+
+.comment:before {
+  content: "\f086";
+  color: white; }
+
+.smile:before {
+  content: "\f118";
+  color: lightyellow; }
+
+.frown:before {
+  content: "\f119";
+  color: lightyellow; }
+
+.meh:before {
+  content: "\f11a";
+  color: lightyellow; }
+
+.right:before {
+  content: "\f058";
+  color: lightgreen; }
+
+.wrong:before {
+  content: "\f057";
+  color: tomato; }
 
 nav a {
   padding-top: 20px !important;
