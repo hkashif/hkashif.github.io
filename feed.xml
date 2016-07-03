@@ -3,8 +3,43 @@
 	<channel>
 		<title>Hany Kashif</title>
 		<description>Research Software Engineer</description>
-		<link>//hkashif.github.io</link>
-		<atom:link href="//hkashif.github.io/feed.xml" rel="self" type="application/rss+xml" />
+		<link>www.hanykashif.com</link>
+		<atom:link href="www.hanykashif.com/feed.xml" rel="self" type="application/rss+xml" />
+		
+			<item>
+				<title>My Signature Salad</title>
+				<description>&lt;p&gt;I spent a considerable amount of time trying a variety of salad recipes. I liked some of them, others not so much. Then, I started to play around with the components to make my own recipe, and find a salad that I truly enjoy.&lt;/p&gt;
+
+&lt;p&gt;Here are the components:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;A handful of baby spinach (minced)&lt;/li&gt;
+  &lt;li&gt;Two to three thin cross-sections of iceberg lettuce (minced)&lt;/li&gt;
+  &lt;li&gt;One stack of celery (minced)&lt;/li&gt;
+  &lt;li&gt;One third of an English cucumber (diced)&lt;/li&gt;
+  &lt;li&gt;One half of a green bell pepper (diced)&lt;/li&gt;
+  &lt;li&gt;One half of a red/orange/yellow bell pepper (diced)&lt;/li&gt;
+  &lt;li&gt;Two handfuls of cherry tomatoes (finely chopped)&lt;/li&gt;
+  &lt;li&gt;One small avocado (diced)&lt;/li&gt;
+  &lt;li&gt;One half of a Gala apple (minced)&lt;/li&gt;
+  &lt;li&gt;A cup of crispy onions&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I use a variety of dressings with this salad:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Mixture of French dressing and balsamic vinaigrette&lt;/li&gt;
+  &lt;li&gt;Zesty Italian dressing&lt;/li&gt;
+  &lt;li&gt;My personal favorite; a whisked mix of olive oil, freshly squeezed lime juice, sumac, freshly ground black pepper, and an optional minced garlic clove&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Enjoy!&lt;/p&gt;
+
+</description>
+				<pubDate>Sun, 03 Jul 2016 10:02:00 -0400</pubDate>
+				<link>www.hanykashif.com/2016/07/signature-salad</link>
+				<guid isPermaLink="true">www.hanykashif.com/2016/07/signature-salad</guid>
+			</item>
 		
 			<item>
 				<title>Mirepoix</title>
@@ -94,8 +129,8 @@
 
 </description>
 				<pubDate>Fri, 01 Jul 2016 16:05:06 -0400</pubDate>
-				<link>//hkashif.github.io/2016/07/mirepoix</link>
-				<guid isPermaLink="true">//hkashif.github.io/2016/07/mirepoix</guid>
+				<link>www.hanykashif.com/2016/07/mirepoix</link>
+				<guid isPermaLink="true">www.hanykashif.com/2016/07/mirepoix</guid>
 			</item>
 		
 	</channel>
