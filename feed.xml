@@ -3,8 +3,8 @@
 	<channel>
 		<title>Hany Kashif</title>
 		<description>Research Software Engineer</description>
-		<link>www.hanykashif.com</link>
-		<atom:link href="www.hanykashif.com/feed.xml" rel="self" type="application/rss+xml" />
+		<link>//hkashif.github.io</link>
+		<atom:link href="//hkashif.github.io/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
 				<title>My Signature Salad</title>
@@ -37,8 +37,8 @@
 
 </description>
 				<pubDate>Sun, 03 Jul 2016 10:02:00 -0400</pubDate>
-				<link>www.hanykashif.com/2016/07/signature-salad</link>
-				<guid isPermaLink="true">www.hanykashif.com/2016/07/signature-salad</guid>
+				<link>//hkashif.github.io/2016/07/signature-salad</link>
+				<guid isPermaLink="true">//hkashif.github.io/2016/07/signature-salad</guid>
 			</item>
 		
 			<item>
@@ -129,8 +129,8 @@
 
 </description>
 				<pubDate>Fri, 01 Jul 2016 16:05:06 -0400</pubDate>
-				<link>www.hanykashif.com/2016/07/mirepoix</link>
-				<guid isPermaLink="true">www.hanykashif.com/2016/07/mirepoix</guid>
+				<link>//hkashif.github.io/2016/07/mirepoix</link>
+				<guid isPermaLink="true">//hkashif.github.io/2016/07/mirepoix</guid>
 			</item>
 		
 	</channel>
