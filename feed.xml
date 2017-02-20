@@ -7,6 +7,26 @@
 		<atom:link href="//hkashif.github.io/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
+				<title>SQL Server Evaluation Expiry - Error 17051</title>
+				<description>&lt;p&gt;I had a SQL server instance up and running for a long period of time. The SQL server instance was installed with a valid product key. All of a sudden, none of my applications were able to connect to the server instance. I tried opening SQL Server Management Studio to check what’s going on. It threw the following error:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server) (Microsoft SQL Server, Error: 2)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Now, I had no idea what this meant. However, I checked Windows services (&lt;strong&gt;services.msc&lt;/strong&gt;). Afterwards, I attempt restarting the SQL Server service, but it throws an error message saying that Windows cannot start the SQL server with an error code: &lt;strong&gt;17051&lt;/strong&gt;. Upon looking this up, it turns out that it means that the SQL Server evaluation period has expired.&lt;/p&gt;
+
+&lt;p&gt;Although, I am 100% sure that I used a product key during installation, but this still sounds like an easy fix. I rerun the SQL Server installation file and attempt to upgrade my SQL Server. The installation process runs smoothly until it just fails when running the SQL engine health check (&lt;strong&gt;Engine__SqlEngineHealthCheck&lt;/strong&gt;). I bang my head against the wall trying to figure this one out.&lt;/p&gt;
+
+&lt;p&gt;After spending too much time on this, it turns out that there is actually an option to skip the &lt;em&gt;SQL Engine Health Check&lt;/em&gt; for the upgrade to succeed. To use this opttion, however, the installation has to be triggered from a Command Line Prompt. To do this, use the upgrade parameters listed &lt;a href=&quot;https://msdn.microsoft.com/en-us/library/ms144259.aspx#Upgrade&quot;&gt;here&lt;/a&gt; and append to your parameters this option: &lt;strong&gt;/SkipRules= Engine__SqlEngineHealthCheck&lt;/strong&gt;. This fixed it all for me.&lt;/p&gt;
+
+</description>
+				<pubDate>Mon, 20 Feb 2017 12:36:06 -0500</pubDate>
+				<link>//hkashif.github.io/2017/02/sqlserver-17051</link>
+				<guid isPermaLink="true">//hkashif.github.io/2017/02/sqlserver-17051</guid>
+			</item>
+		
+			<item>
 				<title>My Signature Salad</title>
 				<description>&lt;p&gt;I spent a considerable amount of time trying a variety of salad recipes. I liked some of them, others not so much. Then, I started to play around with the components to make my own recipe, and find a salad that I truly enjoy.&lt;/p&gt;
 
