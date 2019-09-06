@@ -7,6 +7,114 @@
 		<atom:link href="//hkashif.github.io/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
+				<title>Building My First Home Server</title>
+				<description>&lt;h2 id=&quot;older-home-setup&quot;&gt;&lt;strong&gt;Older Home Setup&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;p&gt;Originally, I had a couple of laptops at home, a WD NAS, and an Nvidia Shield TV box. I used the NAS mainly as a storage for photos, videos, music, and for the occasional backups from the laptops.&lt;/p&gt;
+
+&lt;p&gt;On the Nvidia Shield, I used Kodi as a media center. I couldn’t simply stream videos to Kodi from the NAS .. huge performance issues. I had to buy a high-speed USB drive to extend the storage space on my 500 GB Shield to give more space for Kodi when using P2P downloads.&lt;/p&gt;
+
+&lt;p&gt;What wasn’t I happy with?&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Frequent instabilities with Kodi on Shield.&lt;/li&gt;
+  &lt;li&gt;Couldn’t stream videos directly from the NAS to Kodi.&lt;/li&gt;
+  &lt;li&gt;To run a software overnight, I had to leave my laptop running.&lt;/li&gt;
+  &lt;li&gt;Laptop couldn’t leave home when I wanted to run a software uninterrupted over a period of time.&lt;/li&gt;
+  &lt;li&gt;Had no backup for the NAS.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;what-did-i-need&quot;&gt;&lt;strong&gt;What Did I Need?&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;p&gt;It was clear to me that I needed to upgrade things at home, so I started identifying what I wanted to have. Here is what I came up with:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Better, more automated media setup&lt;/li&gt;
+  &lt;li&gt;Proper backups of my data&lt;/li&gt;
+  &lt;li&gt;Ability to have software running for days collecting and churning data&lt;/li&gt;
+  &lt;li&gt;Private file hosting and sharing service&lt;/li&gt;
+  &lt;li&gt;Ability to run multiple VMs (not on my laptop)&lt;/li&gt;
+  &lt;li&gt;Ability to securely access all of this remotely&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;what-are-my-options&quot;&gt;&lt;strong&gt;What Are My Options?&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;p&gt;I didn’t really do an exhaustive analysis of what my options were. However, I considered a few options.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Extending my NAS&lt;/li&gt;
+  &lt;li&gt;A more advanced NAS&lt;/li&gt;
+  &lt;li&gt;Home workstation with some server OS&lt;/li&gt;
+  &lt;li&gt;RAID server&lt;/li&gt;
+  &lt;li&gt;unRAID server&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Extending my NAS basically meant buying a similar one to what I currently have and connecting them for backups. This only solved one of my problems.&lt;/p&gt;
+
+&lt;p&gt;A more advanced NAS sounded like a good option at first. However, extending it for storage was not as simple. And I wasn’t sure I had any control over what I can run on that NAS. Maybe I would be able to run some apps but there will probably be a lot of limitations. The cost was not low either.&lt;/p&gt;
+
+&lt;p&gt;A home workstation with a server OS was an appealing option. However, this meant no parity. I also was not sure about my options for monitoring the server. I am sure there are tools for that on the different server OSes, I, however, wanted to spend minimal effort for maintaining the server.&lt;/p&gt;
+
+&lt;p&gt;It ended up being a comparison between either a RAID server or an unRAID server. This is already a controversial topic. However, there were a few points that helped me make up mind:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;unRAID does not stripe data across multiple disks. To me, this is safer.&lt;/li&gt;
+  &lt;li&gt;unRAID compensates for performance degradation due to not striping data via a cache drive.&lt;/li&gt;
+  &lt;li&gt;unRAID allows adding an asymmetric disk (with a size smaller than or equal to that of the parity drive)&lt;/li&gt;
+  &lt;li&gt;unRAID does not spin all drives for reading and writing a file&lt;/li&gt;
+  &lt;li&gt;unRAID has a beautiful application store and has native docker support&lt;/li&gt;
+  &lt;li&gt;unRAID has a strong community support forum&lt;/li&gt;
+  &lt;li&gt;unRAID does not need special hardware (compared to RAID)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The unRAID OS has a one time cost which might be a deterrent for some. For me, however, the cost was completely justifiable specifically considering the cost involved in expanding my array in the future.&lt;/p&gt;
+
+&lt;h2 id=&quot;first-home-server&quot;&gt;&lt;strong&gt;First Home Server&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;p&gt;This was not the most exhaustive enumeration or analysis of my options, nevertheless, I decided to go with the unRAID OS. I made the following to-buy-hardware list for my server:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;A used Dell PowerEdge T410
+    &lt;ul&gt;
+      &lt;li&gt;64GB ECC RAM&lt;/li&gt;
+      &lt;li&gt;2 x Xeon X5670 12 Core CPUs&lt;/li&gt;
+      &lt;li&gt;No RAID&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;2 x 4TB HGST 7200RPM 128M Cache NAS Drives&lt;/li&gt;
+  &lt;li&gt;Samsung 970 EVO PLUS 512 GB SSD&lt;/li&gt;
+  &lt;li&gt;SSD NVMe PCIe Adapter&lt;/li&gt;
+  &lt;li&gt;USB Drive with a small form factor&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The T410 came with a SAS backplane for the drives. The SAS backplane was powered by two 4-pin ATX connectors. The SAS backplane, however, didn’t have a connection to the motherboard. The reason is that I ordered the T410 with no RAID. A SAS backplane is connected to the motherboard through a RAID controller and cannot connect directly to the onboard SATA ports. I had two options:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Buy a H200 RAID controller and run the drives unconfigured (non RAID) to pass them through as individual drives.&lt;/li&gt;
+  &lt;li&gt;Get rid of the backplane and connect the drives directly to the motherboard.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;I was not sure about the performance of the first option so I went with the second. I installed the cache drive into the SSD adapter and into a PCIe port in the motherboard. I setup the USB drive with the unRAID OS from an Ubunutu host as follows:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Formatted the drive as FAT32&lt;/li&gt;
+  &lt;li&gt;Unzipped the contents to the drive&lt;/li&gt;
+  &lt;li&gt;Edited the configuration files as needed (e.g., host name)&lt;/li&gt;
+  &lt;li&gt;Unmounted the USB drive&lt;/li&gt;
+  &lt;li&gt;Ran the ‘make bootable’ shell script from the local copy&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;This is it. I put the USB drive into a port directly on the motherboard, closed the chassis, started the server, and it worked.&lt;/p&gt;
+
+&lt;p&gt;In future posts, I will explain the software setup of the server.&lt;/p&gt;
+
+</description>
+				<pubDate>Thu, 05 Sep 2019 16:36:00 -0400</pubDate>
+				<link>//hkashif.github.io/2019/09/unraid-hardware</link>
+				<guid isPermaLink="true">//hkashif.github.io/2019/09/unraid-hardware</guid>
+			</item>
+		
+			<item>
 				<title>SQL Server Evaluation Expiry - Error 17051</title>
 				<description>&lt;p&gt;I had a SQL server instance up and running for a long period of time. The SQL server instance was installed with a valid product key. All of a sudden, none of my applications were able to connect to the server instance. I tried opening SQL Server Management Studio to check what’s going on. It threw the following error:&lt;/p&gt;
 
